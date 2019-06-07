@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1559892891751" clover="3.2.0">
+  <project timestamp="1559892891752" name="All files">
+    <metrics statements="69" coveredstatements="69" conditionals="24" coveredconditionals="24" methods="13" coveredmethods="13" elements="106" coveredelements="106" complexity="0" loc="69" ncloc="69" packages="2" files="5" classes="5">
+      <package name="quiz-one">
+        <metrics statements="27" coveredstatements="27" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
+        <file name="Q1.js" path="/Volumes/MAC-DATA/Project/Pyco/Indigo/Exercises/src/quiz-one/Q1.js">
+          <metrics statements="27" coveredstatements="27" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="4" type="cond" truecount="4" falsecount="0"/>
+          <line num="10" count="3" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="14" count="3" type="stmt"/>
+          <line num="15" count="3" type="stmt"/>
+          <line num="16" count="4" type="stmt"/>
+          <line num="17" count="4" type="stmt"/>
+          <line num="18" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="20" count="4" type="stmt"/>
+          <line num="21" count="4" type="stmt"/>
+          <line num="24" count="2" type="stmt"/>
+          <line num="25" count="2" type="stmt"/>
+          <line num="28" count="4" type="stmt"/>
+          <line num="30" count="3" type="stmt"/>
+          <line num="38" count="1" type="stmt"/>
+          <line num="39" count="4" type="cond" truecount="4" falsecount="0"/>
+          <line num="41" count="3" type="stmt"/>
+          <line num="42" count="3" type="stmt"/>
+          <line num="43" count="3" type="stmt"/>
+          <line num="44" count="4" type="stmt"/>
+          <line num="45" count="6" type="stmt"/>
+          <line num="47" count="4" type="stmt"/>
+          <line num="50" count="3" type="stmt"/>
+          <line num="51" count="3" type="stmt"/>
+        </file>
+      </package>
+      <package name="quiz-three">
+        <metrics statements="42" coveredstatements="42" conditionals="14" coveredconditionals="14" methods="9" coveredmethods="9"/>
+        <file name="Configuration.js" path="/Volumes/MAC-DATA/Project/Pyco/Indigo/Exercises/src/quiz-three/Configuration.js">
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+        </file>
+        <file name="Customer.js" path="/Volumes/MAC-DATA/Project/Pyco/Indigo/Exercises/src/quiz-three/Customer.js">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="3" count="20" type="stmt"/>
+          <line num="7" count="20" type="stmt"/>
+          <line num="8" count="20" type="stmt"/>
+          <line num="9" count="20" type="stmt"/>
+          <line num="10" count="20" type="stmt"/>
+        </file>
+        <file name="DiscountUtil.js" path="/Volumes/MAC-DATA/Project/Pyco/Indigo/Exercises/src/quiz-three/DiscountUtil.js">
+          <metrics statements="20" coveredstatements="20" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="4" type="stmt"/>
+          <line num="15" count="4" type="stmt"/>
+          <line num="16" count="4" type="stmt"/>
+          <line num="17" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="30" count="6" type="stmt"/>
+          <line num="31" count="6" type="stmt"/>
+          <line num="32" count="6" type="cond" truecount="2" falsecount="0"/>
+          <line num="33" count="2" type="stmt"/>
+          <line num="46" count="1" type="stmt"/>
+          <line num="47" count="16" type="stmt"/>
+          <line num="49" count="16" type="cond" truecount="2" falsecount="0"/>
+          <line num="54" count="2" type="stmt"/>
+          <line num="56" count="14" type="stmt"/>
+          <line num="57" count="14" type="stmt"/>
+          <line num="62" count="14" type="stmt"/>
+          <line num="63" count="14" type="stmt"/>
+        </file>
+        <file name="Shop.js" path="/Volumes/MAC-DATA/Project/Pyco/Indigo/Exercises/src/quiz-three/Shop.js">
+          <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+          <line num="12" count="20" type="stmt"/>
+          <line num="14" count="20" type="stmt"/>
+          <line num="15" count="20" type="stmt"/>
+          <line num="19" count="20" type="stmt"/>
+          <line num="20" count="20" type="stmt"/>
+          <line num="21" count="20" type="stmt"/>
+          <line num="22" count="20" type="stmt"/>
+          <line num="26" count="20" type="cond" truecount="2" falsecount="0"/>
+          <line num="27" count="4" type="stmt"/>
+          <line num="29" count="16" type="stmt"/>
+          <line num="30" count="16" type="stmt"/>
+          <line num="36" count="16" type="stmt"/>
+          <line num="41" count="10" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
