@@ -30,3 +30,6 @@ yarn test:coverage
 ## Quiz 2:
 
 - Simulate discount based retail website policy and target to specific customer type
+
+## Coverage:
+<img width="756" alt="code-coverage" src="https://user-images.githubusercontent.com/20040653/59089453-52aec180-8934-11e9-8cd3-9aaad39bc6c7.png">
