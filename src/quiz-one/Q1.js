@@ -1,6 +1,14 @@
 /**
  * Load string and analyze to an array
  * with key & value respectively
+ * Input => 'key1=value1;key2=value2\nkeyA=valueA'
+ *
+ * Output => [{ key1: value1,
+ *              key2: value2
+ *            },
+ *            {
+ *               keyA: valueA
+ *            }]
  * @param {* String} text
  */
 
@@ -31,8 +39,15 @@ const load = text => {
 };
 
 /**
- * Store array into string
+ * Store array and combined into string
+ * Input =>  [{ key1: value1,
+ *              key2: value2
+ *            },
+ *            {
+ *               keyA: valueA
+ *            }]
  *
+ * Output => 'key1=value1;key2=value2\nkeyA=valueA'
  * @param {* Array} array
  */
 const store = array => {
