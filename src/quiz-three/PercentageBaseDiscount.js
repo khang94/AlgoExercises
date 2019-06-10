@@ -1,7 +1,7 @@
 import DiscountBase from "./DiscountBase";
 
 export default class PercentageBaseDiscount extends DiscountBase {
-  constructor(object = {}) {
+  constructor(object) {
     super();
     this.setAttributes(object);
   }
@@ -12,11 +12,11 @@ export default class PercentageBaseDiscount extends DiscountBase {
     this.percentDiscount = percentDiscount;
   }
 
-  getDescription() {
+  /* getDescription() {
     return this.description;
   }
 
   getPercentDiscount() {
     return this.percentDiscount;
-  }
+  } */
 }
