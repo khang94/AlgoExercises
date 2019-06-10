@@ -5,14 +5,15 @@ import {
   CATEGORY_TYPE
 } from "./Configuration";
 
-import { getDiscountRatio } from "./DiscountUtil";
+import DiscountRules, { DISCOUNT_TYPES } from "./DiscountRules";
+import { getDiscountRatio, checkLoyaltyQualification } from "./DiscountUtil";
 
 export default class Shop {
   constructor(object) {
     this.setAttributes(object);
 
-    this.getDiscountAmount = this.getDiscountAmount.bind(this);
-    this.getNetOfPayableAmount = this.getNetOfPayableAmount.bind(this);
+    this.discountRules = new DiscountRules().getDiscountRules();
+    this.classifyDiscountType();
   }
 
   setAttributes(object) {
@@ -22,19 +23,34 @@ export default class Shop {
     this.sellerType = sellerType;
   }
 
-  getDiscountAmount() {
+  classifyDiscountType() {
     if (this.sellerType === CATEGORY_TYPE.GROCERY) {
-      return 0;
+      this.discountRuleActive = this.discountRules[DISCOUNT_TYPES.GROCERIES];
+    } else if (this.customer.category === CUSTOMER_TYPE.EMPLOYEE) {
+      this.discountRuleActive = this.discountRules[DISCOUNT_TYPES.EMPLOYEE];
+    } else if (this.customer.category === CUSTOMER_TYPE.AFFILIATE) {
+      this.discountRuleActive = this.discountRules[DISCOUNT_TYPES.AFFILLIATE];
+    } else if (
+      this.customer.category === CUSTOMER_TYPE.LOYALTY &&
+      checkLoyaltyQualification(this.customer.dateJoinService)
+    ) {
+      this.discountRuleActive = this.discountRules[
+        DISCOUNT_TYPES.LOYALTY_CUSTOMER
+      ];
+    } else if (this.totalCash >= 100) {
+      this.discountRuleActive = this.discountRules[DISCOUNT_TYPES.AMOUNT];
     } else {
-      const { category, dateJoinService } = this.customer;
-      const discountRatio = getDiscountRatio(
-        category,
-        dateJoinService,
-        this.sellerType,
-        this.totalCash
-      );
-      return this.totalCash * discountRatio;
+      this.discountRuleActive = {};
     }
+
+    return this.discountRuleActive;
+  }
+
+  getDiscountAmount() {
+    const discountRatio = this.discountRuleActive.percentDiscount
+      ? this.discountRuleActive.percentDiscount
+      : 0;
+    return this.totalCash * discountRatio;
   }
 
   getNetOfPayableAmount() {

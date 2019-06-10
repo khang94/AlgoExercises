@@ -167,7 +167,7 @@ describe("Choose appropriate discount based on multiple conditions", () => {
     shopCart = new Shop({
       ...shopCart,
       customer,
-      totalCash: 120
+      totalCash: 90
     });
 
     const discountAmount = shopCart.getDiscountAmount();
