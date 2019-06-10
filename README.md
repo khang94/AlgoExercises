@@ -26,6 +26,9 @@ yarn test:coverage
 - Implement load and store data function.
 - Load function : transform string data and parse to an objects
 - Store function : transform an array data to string
+- Complexity : 
+  + loadData: no more than one loop, complexity => O(n)
+  + storeData: transform data to string, complexity => O(n * m)
 
 ## Quiz 2:
 
