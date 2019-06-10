@@ -1,12 +1,7 @@
-import {
-  SETTINGS,
-  CUSTOMER_TYPE,
-  DISCOUNT_BASED_ON_TYPE,
-  CATEGORY_TYPE
-} from "./Configuration";
+import { CUSTOMER_TYPE, CATEGORY_TYPE } from "./Configuration";
 
 import DiscountRules, { DISCOUNT_TYPES } from "./DiscountRules";
-import { getDiscountRatio, checkLoyaltyQualification } from "./DiscountUtil";
+import { checkLoyaltyQualification } from "./DiscountUtil";
 
 export default class Shop {
   constructor(object) {
